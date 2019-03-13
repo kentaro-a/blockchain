@@ -1,7 +1,5 @@
 package main
 
-// curl -H "Content-type:application/json" http://160.16.70.129:8009/chain/add -d '{"amount":11, "from": "user_from", "to": "user_to"}'
-// curl -H 'Content-Type:application/json' http://160.16.70.129:8009/chain/list
 import (
 	"encoding/json"
 	"github.com/blockchain/modules"
