@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Block Chain Proto</title>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+	<style>
+		table {
+			font-size:0.7rem;
+		}
+		.col-sm {
+			width:100px;
+		}
+		.col-lg {
+			width:300px;
+		}
+		td {
+			word-break: break-all;
+		}
+		input {
+			width: 200px;
+			height: 30px;
+			font-size: 1.2em;
+			padding-left: 8px;
+		}
+		button {
+			height: 36px;
+			font-size: 1.2em;
+			width: 200px;
+		}
+		/* .sm { */
+		/* 	font-size:.4em; */
+		/* } */
+	</style>
+</head>
+
+<body>
+	<div style="padding:2rem" >
+		<h2 style="margin-top:2rem; ">Coin送金</h2>
+		<div style="border:2px solid #efefef; padding:1.5em;" >
+			<input id="From" type="text" value="" placeholder="From">
+			<input id="To" type="text" value="" placeholder="To">
+			<input id="Amount" type="text" value="" placeholder="Amount">
+			<button id="btn_pay">送金</button>
+		</div>
+		<div style="margin-top:2rem" >
+			<table id="tbl_transaction" border="1">
+				<thead>
+					<tr >
+						<th>送金元</th>
+						<th>送金先</th>
+						<th>Coin数</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+
+
+		<h2 style="margin-top:10rem; ">Mining</h2>
+		<div style="border:2px solid #efefef; padding:1.5em;" >
+			<input id="Miner" type="text" value="" placeholder="name...">
+			<button id="btn_mining">Mining</button>
+		</div>
+		<div style="margin-top:2rem" >
+			<table id="tbl_chain" border="1">
+				<thead>
+					<tr >
+						<th>ID</th>
+						<th>時刻</th>
+						<th>送金データ</th>
+						<th>ハッシュ</th>
+						<th>前のブロックのハッシュ</th>
+						<th>ナンス</th>
+						<th>マイナー</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+
+
+	</div>
+
+</body>
+
+
+
+
+</html>
